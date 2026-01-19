@@ -10,9 +10,14 @@ import pandas as pd
 import FinanceDataReader as fdr
 import matplotlib.pyplot as plt
 import koreanize_matplotlib
-
-
 import datetime
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+my_name = os. getenv('MY_NAME')
+st.header(my_name)
+
 
 def get_krx_company_list() -> pd.DataFrame:
     try:
