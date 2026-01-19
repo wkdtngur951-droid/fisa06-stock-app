@@ -3,5 +3,8 @@
 # 간단한 정규식 사용 가능 # *은 모든파일
 *.txt
 
+!requirements.txt
+# !requirements.txt 얘는 빼고 나머지 txt 파일만 제외
+
 # 폴더는 '폴더명/' 으로 작성
 st/
